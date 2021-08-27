@@ -4,7 +4,7 @@ Projeto de conclusão do treinamento online do Programa de Bolsas Start Tech, of
 
 -- Projeto:
 
-O cliente fictício JobsNET (especialista em recrutamento e seleção de profissionais nas mais diversas áreas) solicitou o desenvolvimento de uma Landing Page para cadastro de profissionais, para conectar as oportunidades de emprego.
+O cliente fictício JobsNET (especialista em recrutamento e seleção de profissionais nas mais diversas áreas) solicitou o desenvolvimento de uma Landing Page para cadastro de profissionais, para conectá-los à oportunidades de emprego.
 
 
 
