@@ -15,9 +15,13 @@ O cliente fictício JobsNET (especialista em recrutamento e seleção de profiss
 Front-end
 
 Fase 1 - Criação da Página
+
     1. Apresentar a estrutura do projeto no github;
+    
     2. Landing page com formulário para preenchimento de candidatura. (Referencia formulário - link)
+    
     3. Não existe uma regra para o layout da página, use a imaginação com todos os conhecimentos adquiridos no front-end
+    
     4.Indicamos o Netlify para hospedar sua pagina gratuitamente.
 
 
