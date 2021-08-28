@@ -1,0 +1,132 @@
+{
+    "openapi": "3.0.0",
+
+    "info": {
+        "title": "API de Cadastro de Candidatos",
+        "description": "API Rest com funcionalidade de Cadastro de Candidatos e Armazenamento em Banco de Dados",
+        "version": "0.0.1"
+    },
+
+    "servers": [
+        {
+            "url":"http://localhost:5000",
+            "description": "ambiente de desenvolvimento"
+        }
+    ],
+
+    "paths": {
+        "/register": {
+            "post": {
+                "summary": "Cadastro de Candidato",
+                "description": "Rota de Cadastro de Usuário.  Recebe: id, name, position, date, estadoCivil, gender, cep, logradouro, numero, bairro, localidade, uf, tel, cel, email, rg, cpf, veiculo, habilitacao",
+                "tags": ["candidato"],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+
+                                    "position": {
+                                        "type": "string"
+                                    },
+
+                                    "date": {
+                                        "type": "number"
+                                    },
+
+                                    "estadoCivil": {
+                                        "type": "string"
+                                    },
+
+                                    "gender": {
+                                        "type": "string"
+                                    },
+
+                                    "cep": {
+                                        "type": "number"
+                                    },
+
+                                    "logradouro": {
+                                        "type": "string"
+                                    },
+
+                                    "numero": {
+                                        "type": "number"
+                                    },
+
+                                    "bairro": {
+                                        "type": "string"
+                                    },
+
+                                    "localidade": {
+                                        "type": "string"
+                                    },
+
+                                    "uf": {
+                                        "type": "string"
+                                    },
+
+                                    "tel": {
+                                        "type": "number"
+                                    },
+
+                                    "cel": {
+                                        "type": "number"
+                                    },
+
+                                    "email": {
+                                        "type": "string"
+                                    },
+
+                                    "rg": {
+                                        "type": "number"
+                                    },
+
+                                    "cpf": {
+                                        "type": "number"
+                                    },
+
+                                    "veiculo": {
+                                        "type": "string"
+                                    },
+
+                                    "habilitacao": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+
+                            "examples": {
+                                "Poeta ou Pseudônimo": {
+                                    "value": {
+                                        "name": "Amarilda Fidarga",
+                                        "position": "Poetisa",
+                                        "date": "01/04/80",
+                                        "estadoCivil": "Solteiro/a",
+                                        "gender": "Não binárie",
+                                        "cep": "46750-000",
+                                        "logradouro": "Rua da Biquinha",
+                                        "numero": "420",
+                                        "bairro": "Centro",
+                                        "localidade": "Mucugê",
+                                        "uf": "BA",
+                                        "tel": "00-000000000",
+                                        "cel": "00-000000000",
+                                        "email":"amarilda.fidarga@gmail.com",
+                                        "rg": "00000000",
+                                        "cpf": "00000000000",
+                                        "veiculo": "Sim",
+                                        "habilitacao": "Sim - Categoria B"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
