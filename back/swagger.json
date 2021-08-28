@@ -46,7 +46,7 @@
                                     },
 
                                     "cep": {
-                                        "type": "number"
+                                        "type": "string"
                                     },
 
                                     "logradouro": {
@@ -70,11 +70,11 @@
                                     },
 
                                     "tel": {
-                                        "type": "number"
+                                        "type": "string"
                                     },
 
                                     "cel": {
-                                        "type": "number"
+                                        "type": "string"
                                     },
 
                                     "email": {

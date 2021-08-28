@@ -58,8 +58,7 @@ const Formulario = () => {
 };
 
 const criarCandidato = async (Candidate) => {
-    try {
-        const usuario = fetch("http://localhost:5000/register", {
+        const usuario = await fetch("http://localhost:5000/register", {
             method: "POST",
             headers: {
                 "Accept": "application/json",
@@ -69,9 +68,30 @@ const criarCandidato = async (Candidate) => {
         });
 
         if(usuario.status === 200) {
-            alert("Deu certo!")
+            alert("Seu cadastro foi realizado com sucesso.")
+        }
+
+        else if (usuario.status === 500) {
+            alert("Puxa, já temos essa informação aqui.")
+        }
+
+        else {
+            alert("Seu cadastro não pôde ser realizado.")
         };
-    } catch (error) {
-        alert("Deu errado.");
-    };
+};
+
+//Validação
+function check_form() { 
+    let valid = true;
+    if (!valicaoCPF() || !buscaCEP()) {
+        valid = false;
+    }
+
+    else if (!valid) {
+        alert("Por favor, preencha todos os campos corretamente.");
+    }
+
+    else {
+        return true;
+    }
 };
