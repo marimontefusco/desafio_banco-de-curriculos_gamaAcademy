@@ -34,7 +34,7 @@
                                     },
 
                                     "date": {
-                                        "type": "number"
+                                        "type": "string"
                                     },
 
                                     "estadoCivil": {
@@ -82,11 +82,11 @@
                                     },
 
                                     "rg": {
-                                        "type": "number"
+                                        "type": "string"
                                     },
 
                                     "cpf": {
-                                        "type": "number"
+                                        "type": "string"
                                     },
 
                                     "veiculo": {
@@ -113,11 +113,11 @@
                                         "bairro": "Centro",
                                         "localidade": "Mucugê",
                                         "uf": "BA",
-                                        "tel": "00-000000000",
-                                        "cel": "00-000000000",
+                                        "tel": "75-22222222",
+                                        "cel": "75-222222222",
                                         "email":"amarilda.fidarga@gmail.com",
-                                        "rg": "00000000",
-                                        "cpf": "00000000000",
+                                        "rg": "222222222",
+                                        "cpf": "22222222222",
                                         "veiculo": "Sim",
                                         "habilitacao": "Sim - Categoria B"
                                     }

@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const CandidateSchema = new mongoose.Schema({
     name: { type: String, unique: false, required: true },
     position: { type: String, unique: false, required: true },
-    date: { type: String, unique: false, required: true },//number ou string?
+    date: { type: String, unique: false, required: true },
     estadoCivil: { type: String, unique: false, required: false },
     gender: { type: String, unique: false, required: false },
     cep: { type: String, unique: false, required: true },
