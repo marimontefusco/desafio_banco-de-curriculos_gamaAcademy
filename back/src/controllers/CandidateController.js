@@ -26,7 +26,6 @@ module.exports = {
         newCandandidate.veiculo = veiculo;
         newCandandidate.habilitacao = habilitacao;
 
-
         newCandandidate.save((err, savedCandidate) => {
             if (err) {
                 console.log(err);

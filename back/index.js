@@ -5,9 +5,7 @@ const swaggerDocs = require('./swagger.json');
 const routes = require('./routes');
 const cors = require('cors');
 const app = express();
-
 //const port = 5000;
-
 
 //Para conectar ao Banco de Dados MongoDB Atlas:
 mongoose.connect(
@@ -30,6 +28,3 @@ app.use(cors());
 app.listen('5000', () => {
   console.log(`Servidor rodando em http://localhost:5000`)
 });
-
-
-

@@ -94,7 +94,7 @@
 
             <div class="campo grid-1-5">
               <label for="numero">Número *</label>
-              <input type="number" id="numero" class="form-control" required />
+              <input type="number" id="numero" maxlength="6" class="form-control" required />
             </div>
           </fieldset> 
 
@@ -156,7 +156,7 @@
 
             <div class="campo grid-1-3">
               <label for="cel">Celular *</label>
-              <input type="tel" id="cel" maxlength="12" placeholder="ex: xx-xxxxxxxxx" required />
+              <input type="tel" id="cel" maxlength="13" placeholder="ex: xx-xxxxxxxxx" required />
             </div>
 
             <div class="campo grid-1-3">
@@ -176,6 +176,7 @@
               <input
                 type="number"
                 id="rg"
+                maxlength="10"
                 placeholder="Digite somente os números do seu RG"
                 required
               />
@@ -186,8 +187,10 @@
               <input
                 type="number"
                 id="cpf"
+                maxlength="12"
                 placeholder="Digite somente os números do seu CPF"
                 required
+                onchange="validaCPF()"
               />
             </div>
           </fieldset>
@@ -227,6 +230,6 @@
       </form>
     </main>
 
-    <script src="Assets/js/main.js"></script>
+    <script src="./Assets/js/main.js"></script>
   </body>
 </html>
