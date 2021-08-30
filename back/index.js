@@ -15,16 +15,21 @@ mongoose.connect(
   }
 );
 
-
 //Antigo bodyParser (const bodyParser = require('body-parser') -> descontinuado e agora já incluso no express. Então:
+//Definição de middlewares
 app.use(express.json());
 
+//Configuração swagger
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 //  /docs -> serve para mostrar nossa documentação, essa é a rota de onde ela está
 
+//Configuração das rotas
 app.use(routes);
+
+//Evitando erros de cors
 app.use(cors());
 
-app.listen('5000', () => {
+//Configuração do servidor
+app.listen(process.env.PORT || 5000, () => {
   console.log(`Servidor rodando em http://localhost:5000`)
 });

@@ -55,7 +55,7 @@ const Formulario = () => {
 }
 
 const criarCandidato = async (Candidate) => {
-  const usuario = await fetch("http://localhost:5000/register", {
+  const usuario = await fetch("hhttps://banco-de-curriculos-desafio.herokuapp.com/register", {
     method: "POST",
     headers: {
       Accept: "application/json",
