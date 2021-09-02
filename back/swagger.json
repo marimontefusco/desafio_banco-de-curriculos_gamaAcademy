@@ -34,7 +34,7 @@
                                     },
 
                                     "date": {
-                                        "type": "string"
+                                        "type": "date"
                                     },
 
                                     "estadoCivil": {

@@ -30,6 +30,6 @@ app.use(routes);
 app.use(cors());
 
 //Configuração do servidor
-app.listen(process.env.PORT || 5000, () => {
+app.listen(process.env.PORT || '5000', () => {
   console.log(`Servidor rodando em http://localhost:5000`)
 });
