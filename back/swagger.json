@@ -54,7 +54,7 @@
                                     },
 
                                     "numero": {
-                                        "type": "number"
+                                        "type": "string"
                                     },
 
                                     "bairro": {
